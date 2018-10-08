@@ -39,7 +39,7 @@ client.on('message', message => {
  
   if (message.content.startsWith('=send')) {
           if (!args[0]) {
-message.channel.send("**=end <message>**");
+message.channel.send("**=send <message>**");
 return;
 }
 message.guild.members.forEach(m => {
