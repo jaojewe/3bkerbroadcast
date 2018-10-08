@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '+'
+const prefix = '='
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -37,9 +37,9 @@ client.on('message', message => {
   }
  
  
-  if (message.content.startsWith('+send')) {
+  if (message.content.startsWith('=send')) {
           if (!args[0]) {
-message.channel.send("**+send <message>**");
+message.channel.send("**=end <message>**");
 return;
 }
 message.guild.members.forEach(m => {
